@@ -32,7 +32,7 @@ export default class List extends Component {
       <div className="row">
         {data.map((movie) => {
           return (
-            <div className="col-sm-2">
+            <div className="col-sm-2" key={movie.id}>
               <Card key={movie.id} movie={movie} />
             </div>
           );
